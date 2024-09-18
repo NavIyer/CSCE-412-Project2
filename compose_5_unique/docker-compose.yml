@@ -1,0 +1,33 @@
+name: static-site
+
+services:
+    web1:
+        image: my-nginx-container
+        ports:
+            - "8080:80"
+        volumes:
+            - /home/ubuntu/CSCE-412-Project2/static-site/scripts/type0.js:/usr/share/nginx/html/scripts/type.js
+    web2:
+        image: my-nginx-container
+        ports:
+            - "8081:80"
+        volumes:
+            - /home/ubuntu/CSCE-412-Project2/static-site/scripts/type1.js:/usr/share/nginx/html/scripts/type.js
+    web3:
+        image: my-nginx-container
+        ports:
+            - "8082:80"
+        volumes:
+            - /home/ubuntu/CSCE-412-Project2/static-site/scripts/type2.js:/usr/share/nginx/html/scripts/type.js
+    web4:
+        image: my-nginx-container
+        ports:
+            - "8083:80"
+        volumes:
+            - /home/ubuntu/CSCE-412-Project2/static-site/scripts/type3.js:/usr/share/nginx/html/scripts/type.js
+    web5:
+        image: my-nginx-container
+        ports:
+            - "8084:80"
+        volumes:
+            - /home/ubuntu/CSCE-412-Project2/static-site/scripts/type4.js:/usr/share/nginx/html/scripts/type.js
